@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+body > * {
+  box-sizing: border-box;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -18,12 +22,12 @@ a {
   grid-template-columns: 1fr repeat(3, auto);
   column-gap: 1.2rem;
   align-items: center;
-  padding: 1.2rem 1.5rem;
+  height: 5rem;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid black;
 }
 
 .navbar .navbar-item {
-
 }
 
 .navbar .navbar-title {
@@ -45,4 +49,59 @@ a {
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
+}
+
+.navbar .navbar-link:hover {
+  color: var(--primary-color);
+}
+
+.banner {
+  height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin: -5rem 0 0 0;
+}
+
+.banner-animation {
+  height: 4rem;
+  overflow: hidden;
+}
+
+.banner-animation > div > span {
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  margin-bottom: 1.7rem;
+  display: inline-block;
+}
+
+.banner-animation div:first-child {
+  animation: show 5s linear infinite;
+}
+
+.banner-animation div span {
+  text-shadow: var(--secondary-color) 1px -1px;
+}
+.banner-animation div:first-child span {
+  text-shadow: var(--primary-color) 1px -1px;
+}
+.banner-animation div:last-child span {
+  text-shadow: var(--secondary-color) 1px -1px, var(--primary-color) -2px 2px;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
 }
