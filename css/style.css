@@ -20,10 +20,10 @@ a {
 .navbar {
   display: grid;
   grid-template-columns: 1fr repeat(3, auto);
-  column-gap: 1.2rem;
+  column-gap: 1.5rem;
   align-items: center;
   height: 5rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid black;
 }
 
@@ -42,17 +42,19 @@ a {
   text-shadow: var(--primary-color) 2px -1px, var(--secondary-color) -3px 1px;
 }
 
-.navbar .navbar-link {
+.navbar .navbar-link, h2 {
   font-size: 1.4rem;
-  background-image: url(https://images.squarespace-cdn.com/content/v1/59951c46c534a51a837cc05e/1564415582543-8KHJ1WMS8NZ47XMDWHT1/HJ_Loop_C001.gif);
+  background-image: url(../img/flashing-smoke.gif);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar .navbar-link:hover {
   color: var(--primary-color);
+  text-shadow: var(--primary-color) 0 0 15px;
 }
 
 .banner {
@@ -82,20 +84,23 @@ a {
 }
 
 .banner-animation div:first-child {
-  animation: show 5s linear infinite;
+  animation: flip 4s linear infinite;
 }
 
 .banner-animation div span {
-  text-shadow: var(--secondary-color) 1px -1px;
+  color: var(--primary-color);
+  text-shadow: var(--secondary-color) -2px 2px;
 }
 .banner-animation div:first-child span {
-  text-shadow: var(--primary-color) 1px -1px;
+  color: var(--secondary-color);
+  text-shadow: var(--primary-color) -2px 2px;
 }
 .banner-animation div:last-child span {
+  color: black;
   text-shadow: var(--secondary-color) 1px -1px, var(--primary-color) -2px 2px;
 }
 
-@keyframes show {
+@keyframes flip {
   0% {margin-top:-270px;}
   5% {margin-top:-180px;}
   33% {margin-top:-180px;}
@@ -104,4 +109,67 @@ a {
   71% {margin-top:0px;}
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
+}
+
+main > * {
+  padding: 0 6rem;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+section p {
+
+}
+
+#bio {
+/*
+  background: linear-gradient(-45deg, white, var(--primary-color), var(--secondary-color));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  box-shadow: 0 30px 40px rgba(0,0,0,0.1);
+*/
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.project-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-rows: 230px;
+}
+
+.project-grid figure {
+  margin: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-grid img {
+  height: 100%;
+  width: auto;
+  
+}
+
+#projects {
+
+}
+
+#open-source {
+
 }
