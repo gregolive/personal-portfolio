@@ -222,22 +222,78 @@ li {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  
 }
 
 .project-grid figure {
   margin: 0;
   border-radius: 12px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
-.project-grid img {
-  height: auto;
+figure img {
+  height: 100%;
   width: 100%;
   border-radius: 12px;
+}
+
+figure figcaption {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+figure figcaption, .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+figure:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s linear;
+}
+
+figure:hover .cover {
+  opacity: 1;
+  background-color: #030150;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+figure:hover a {
+  border: 2px solid var(--primary-color);
+}
+
+figcaption h3 {
+  font-size: 1.5rem;
+}
+
+figcaption a {
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 1.25rem;
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  transition: all 0.4s ease-in;
+}
+
+figcaption a:hover {
+  background-color: var(--primary-color);
+}
+
+figcaption a span {
+  padding-left: 8px;
 }
 
 #projects {
