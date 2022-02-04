@@ -42,7 +42,7 @@ a {
   text-shadow: var(--primary-color) 2px -1px, var(--secondary-color) -3px 1px;
 }
 
-.navbar .navbar-link, h2 {
+.navbar .navbar-link, .projects h2, .open-source h2 {
   font-size: 1.4rem;
   background-image: url(../img/flashing-smoke.gif);
   background-size: cover;
@@ -111,25 +111,37 @@ a {
   100% {margin-top:-270px;}
 }
 
-main > * {
-  padding: 0 6rem;
+.main-section {
+  padding: 6rem 6rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-h2 {
-  font-size: 2.5em;
+.main-section h2 {
+  font-size: 2rem;
+  margin: 0;
 }
 
-section p {
+.main-section p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
 
+.main-section .section-description {
+  padding: 0 10vw;
+  text-align: center;
 }
 
 #bio {
-/*
-  background: linear-gradient(-45deg, white, var(--primary-color), var(--secondary-color));
-  background-size: 400% 400%;
+  color: white;
+  background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color)) no-repeat;
+  background-size: 400% 100%;
+  background-position: top;
   animation: gradient 15s ease infinite;
-  box-shadow: 0 30px 40px rgba(0,0,0,0.1);
-*/
+  padding-bottom: 8rem;
 }
 
 @keyframes gradient {
@@ -144,16 +156,52 @@ section p {
 	}
 }
 
+.skills {
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(230, 236, 248);
+  border-radius: 0.8rem;
+  margin: -6rem 15vw 0 15vw;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  justify-items: center;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills svg {
+  color: var(--primary-color);
+  height: 3rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  line-height: 2rem;
+  text-align: center;
+}
+
 .project-grid {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  grid-template-rows: 230px;
+  
 }
 
 .project-grid figure {
   margin: 0;
-  border-radius: 15px;
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -161,9 +209,9 @@ section p {
 }
 
 .project-grid img {
-  height: 100%;
-  width: auto;
-  
+  height: auto;
+  width: 100%;
+  border-radius: 12px;
 }
 
 #projects {
