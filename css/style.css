@@ -47,6 +47,7 @@ a {
   background-image: url(../img/flashing-smoke.gif);
   background-size: cover;
   color: transparent;
+  background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
   transition: all 0.3s ease-in-out;
@@ -128,6 +129,7 @@ a {
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 2rem;
+  margin-bottom: 0;
 }
 
 .main-section .section-description {
@@ -154,6 +156,30 @@ a {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.links {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.links a {
+  height: 2.8rem;
+  width: 2.8rem;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.links a:hover {
+  border: 2px solid white;
+}
+
+.links a:hover > * {
+  color: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
 }
 
 .skills {
