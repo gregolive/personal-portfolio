@@ -166,22 +166,39 @@ a {
 }
 
 .links a {
-  height: 2.8rem;
-  width: 2.8rem;
-  border: 2px solid rgba(255,255,255,0.4);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.4s;
 }
 
-.links a:hover {
+.links.social-links a {
+  border: 2px solid rgba(255,255,255,0.4);
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+}
+
+.links.social-links a:hover {
   border: 2px solid white;
 }
 
-.links a:hover > * {
-  color: linear-gradient(-45deg, var(--primary-color), var(--secondary-color));
+.links.github-link a {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 1.5rem;
+  height: 3rem;
+  padding: 0 1.5rem;
+}
+
+.links.github-link a:hover {
+  color: white;
+  background: var(--primary-color);
+}
+
+.links.github-link a svg {
+  margin-right: 0.3rem;
 }
 
 .skills {
@@ -240,6 +257,12 @@ figure img {
   height: 100%;
   width: 100%;
   border-radius: 12px;
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+}
+
+figure:hover img {
+  transform: scale(1.2);
 }
 
 figure figcaption {
@@ -258,12 +281,11 @@ figure figcaption, .cover {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-figure:hover img {
-  transform: scale(1.2);
-  transition: all 0.5s linear;
+figure:hover figcaption {
+  opacity: 1;
 }
 
 figure:hover .cover {
@@ -271,13 +293,6 @@ figure:hover .cover {
   background-color: #030150;
 }
 
-figure:hover figcaption {
-  opacity: 1;
-}
-
-figure:hover a {
-  border: 2px solid var(--primary-color);
-}
 
 figcaption h3 {
   font-size: 1.5rem;
@@ -290,7 +305,11 @@ figcaption a {
   border-radius: 1.25rem;
   height: 2.5rem;
   padding: 0 0.75rem;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+figure:hover a {
+  border: 2px solid var(--primary-color);
 }
 
 figcaption a:hover {
