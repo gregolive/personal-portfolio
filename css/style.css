@@ -187,9 +187,9 @@ a {
   color: var(--primary-color);
   font-size: 1.1rem;
   border: 2px solid var(--primary-color);
-  border-radius: 1.5rem;
+  border-radius: 1.6rem;
   height: 3rem;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .links.github-link a:hover {
@@ -243,7 +243,7 @@ li {
 .project-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
 .project-grid figure {
