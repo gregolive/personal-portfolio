@@ -7,16 +7,24 @@
   <title>gregolive Portfolio</title>
 
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+
   <link rel="shortcut icon" type="image/png" href="./img/fav.png">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
-    <a href="/" class="navbar-item navbar-title">go</a>
+    <a href="/" class="navbar-title">go</a>
 
-    <a href="#bio" target="_blank" class="navbar-item navbar-link">Bio</a>
-    <a href="#projects" target="_blank" class="navbar-item navbar-link">Projects</a>
-    <a href="#open-source" target="_blank" class="navbar-item navbar-link">Open source</a>
+    <a class="navbar-burger" onclick="openMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+    </a>
+
+    <div class="navbar-menu">
+      <a href="#bio" target="_blank" class="navbar-item navbar-link">Bio</a>
+      <a href="#projects" target="_blank" class="navbar-item navbar-link">Projects</a>
+      <a href="#open-source" target="_blank" class="navbar-item navbar-link">Open source</a>
+    </div>
   </nav>
 
   <section class="banner">
