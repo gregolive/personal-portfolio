@@ -295,23 +295,6 @@ figcaption a span {
   padding-left: 8px;
 }
 
-/* FOOTER */
-
-footer {
-  color: white;
-  margin-top: 6rem;
-  padding: 3rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-footer small {
-  font-size: 1rem;
-  font-weight: 200;
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
