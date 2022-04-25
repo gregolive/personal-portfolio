@@ -1,0 +1,81 @@
+.navbar {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 3rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid black;
+}
+
+.navbar .navbar-title {
+  color: black;
+  transition: text-shadow 0.18s ease-in-out;
+}
+
+.navbar .navbar-title, .footer-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 2rem;
+  text-shadow: var(--secondary-color) 1px -1px, var(--primary-color) -2px 2px;
+}
+
+.navbar .navbar-title:hover {
+  text-shadow: var(--primary-color) 2px -1px, var(--secondary-color) -3px 1px;
+}
+
+.navbar-menu {
+  justify-self: end;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 1.5rem;
+}
+
+.navbar-menu.open {
+  display: grid;
+}
+
+.navbar-menu.close {
+  display: none;
+}
+
+.navbar .navbar-link, .projects h2, .open-source h2 {
+  font-size: 1.4rem;
+  background-image: url(../../img/flashing-smoke.gif);
+  background-size: cover;
+  color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-link:hover {
+  color: var(--primary-color);
+  text-shadow: var(--primary-color) 0 0 15px;
+}
+
+.navbar-burger {
+  justify-self: end;
+  display: none;
+  cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .navbar-menu {
+    display: none;
+    grid-template-columns: auto;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .navbar-item {
+    width: 100%;
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .navbar-burger {
+    display: block;
+  }
+}
