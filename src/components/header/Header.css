@@ -24,16 +24,9 @@
 
 .navbar-menu {
   justify-self: end;
+  display: grid;
   grid-template-columns: repeat(3, auto);
   column-gap: 1.5rem;
-}
-
-.navbar-menu.open {
-  display: grid;
-}
-
-.navbar-menu.close {
-  display: none;
 }
 
 .navbar .navbar-link, .projects h2, .open-source h2 {
@@ -58,15 +51,26 @@
   cursor: pointer;
 }
 
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
   .navbar-menu {
-    display: none;
     grid-template-columns: auto;
     grid-column: 1 / -1;
     justify-self: center;
+    overflow: hidden;
+  }
+
+  .navbar-menu.open {
+    max-height: 10rem;
+    visibility: visible;
+    transition: max-height 0.25s ease-in;
+  }
+  
+  .navbar-menu.close {
+    max-height: 0;
+    visibility: hidden;
+    transition: max-height 0.15s ease-out;
   }
 
   .navbar-item {
