@@ -3,7 +3,6 @@ import './Header.css';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
-
   const toggleMenu = () => setMenu(!menu);
 
   return (

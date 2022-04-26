@@ -7,18 +7,16 @@
   border-bottom: 1px solid black;
 }
 
-.navbar .navbar-title {
-  color: black;
-  transition: text-shadow 0.18s ease-in-out;
-}
-
-.navbar .navbar-title, .footer-title {
+.navbar-title {
   font-family: 'Fira Code', monospace;
   font-size: 2rem;
+  color: black;
   text-shadow: var(--secondary-color) 1px -1px, var(--primary-color) -2px 2px;
+  transition: text-shadow 0.18s ease-in-out;
+  justify-self: start;
 }
 
-.navbar .navbar-title:hover {
+.navbar-title:hover {
   text-shadow: var(--primary-color) 2px -1px, var(--secondary-color) -3px 1px;
 }
 
@@ -29,7 +27,7 @@
   column-gap: 1.5rem;
 }
 
-.navbar .navbar-link:hover {
+.navbar-link:hover {
   color: var(--primary-color);
   text-shadow: var(--primary-color) 0 0 15px;
 }
@@ -37,7 +35,6 @@
 .navbar-burger {
   justify-self: end;
   display: none;
-  cursor: pointer;
 }
 
 /* MEDIA QUERIES */

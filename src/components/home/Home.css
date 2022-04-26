@@ -22,7 +22,7 @@
 .banner-animation > div > span {
   font-family: 'Fira Code', monospace;
   font-weight: 400;
-  margin-bottom: 1.9rem;
+  margin-bottom: 1.8rem;
   display: inline-block;
 }
 
@@ -76,7 +76,7 @@
   margin-bottom: 0;
 }
 
-.main-section .section-description {
+.section-description {
   padding: 0 10vw;
   text-align: center;
 }
@@ -219,7 +219,7 @@ figure:hover img {
   transform: scale(1.2);
 }
 
-figure figcaption {
+figcaption {
   color: white;
   display: flex;
   flex-direction: column;
@@ -309,7 +309,7 @@ figcaption a span {
   }
 
   .banner-animation > div > span {
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.5rem;
   }
 
   .main-section {
