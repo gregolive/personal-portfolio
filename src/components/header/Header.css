@@ -3,7 +3,7 @@
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   line-height: 3rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-bottom: 1px solid black;
 }
 

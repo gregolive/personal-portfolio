@@ -1,7 +1,7 @@
 /* HERO BANNER */
 
 .banner {
-  height: calc(100vh - 5rem);
+  min-height: calc(100vh - 4rem);
   display: grid;
   place-items: center;
 }
@@ -22,7 +22,7 @@
 .banner-animation > div > span {
   font-family: 'Fira Code', monospace;
   font-weight: 400;
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.9rem;
   display: inline-block;
 }
 
@@ -288,23 +288,6 @@ figcaption a span {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
-  .navbar-menu {
-    display: none;
-    grid-template-columns: auto;
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
-
-  .navbar-item {
-    width: 100%;
-    grid-column: 1 / -1;
-    text-align: center;
-  }
-
-  .navbar-burger {
-    display: block;
-  }
-
   .main-section {
     padding: 6rem 3rem 0 3rem;
   }
@@ -326,7 +309,7 @@ figcaption a span {
   }
 
   .banner-animation > div > span {
-    margin-bottom: 2.3rem;
+    margin-bottom: 2.6rem;
   }
 
   .main-section {
@@ -347,7 +330,7 @@ figcaption a span {
   }
 
   .banner-animation > div > span {
-    margin-bottom: 2.65rem;
+    margin-bottom: 2.8rem;
   }
 
   .main-section {
