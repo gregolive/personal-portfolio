@@ -1,6 +1,6 @@
 footer {
   color: white;
-  margin-top: 6rem;
+  margin-top: calc(3rem + 2vw);
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
@@ -11,4 +11,10 @@ footer {
 footer small {
   font-size: 1rem;
   font-weight: 200;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    margin-top: calc(2rem + 2vw);
+  }
 }

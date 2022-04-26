@@ -1,16 +1,16 @@
-import { personalProjects } from '../../helpers/projects';
+import { openSourceProjects } from '../../helpers/projects';
 
-const PersonalProjects = () => {
+const OpenSource = () => {
   return (
-    <section id='projects' class='main-section projects'>
+    <section id='open-source' class='main-section open-source'>
       <div class='section-description'>
-        <h2>Recent projects</h2>
+        <h2>Open source contributions</h2>
 
-        <p>Here are some of my personal projects.</p>
+        <p>Here are some open source projects I have contributed to.</p>
       </div>
-
+  
       <div class='project-grid'>
-        {personalProjects.map((project) =>
+        {openSourceProjects.map((project) =>
           <figure>
             <img src={project.img} alt={project.title} />
             <figcaption>
@@ -19,16 +19,19 @@ const PersonalProjects = () => {
                 <p>{project.summary}</p>
               </div>
               <a href={project.link} target='_blank' rel='noreferrer'>
-                <span>Visit website</span>
+                <span>Github repo</span>
                 <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' /></svg>
               </a>
             </figcaption>
             <div class='cover'></div>
           </figure>
         )}
+
+        <figure></figure>
+        <figure></figure>
       </div>
     </section>
   );
 };
 
-export default PersonalProjects;
+export default OpenSource;

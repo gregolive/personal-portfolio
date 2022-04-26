@@ -19,4 +19,13 @@ const personalProjects = [
   },
 ];
 
-export { personalProjects };
+const openSourceProjects = [
+  {
+    title: 'The Odin Project',
+    summary: 'An open curriculum for learning web development.',
+    img: require('../img/thumbnails/odin-project.jpg'),
+    link: 'https://github.com/TheOdinProject/curriculum'
+  },
+];
+
+export { personalProjects, openSourceProjects };
