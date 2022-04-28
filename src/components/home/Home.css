@@ -43,17 +43,6 @@
   text-shadow: var(--secondary-color) 1px -1px, var(--primary-color) -2px 2px;
 }
 
-@keyframes flip {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
-}
-
 /* MAIN SECTIONS */
 
 .main-section {
@@ -83,7 +72,7 @@
 
 /* BIO */
 
-#bio, footer {
+#bio {
   color: white;
   background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color)) no-repeat;
   background-size: 400% 100%;
@@ -92,18 +81,6 @@
 
 #bio {
   padding-bottom: 8rem;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 .links {
