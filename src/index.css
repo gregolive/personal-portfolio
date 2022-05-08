@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+  font-family: 'Simplaform';
+  src: local('Simplaform'), url(./assets/fonts/Simplaform.otf) format('opentype');
+}
+
 :root {
   --primary-color: #2924fb;
   --secondary-color: #fd23de;

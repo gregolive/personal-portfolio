@@ -12,7 +12,7 @@ button {
 .navbar .navbar-link, .projects h2, .open-source h2 {
   font-size: 1.4rem;
   background: var(--primary-color);
-  background-image: url(./img/flashing-smoke.gif);
+  background-image: url(./assets/img/flashing-smoke.gif);
   background-size: cover;
   color: transparent;
   background-clip: text;

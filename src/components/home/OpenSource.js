@@ -1,4 +1,4 @@
-import { openSourceProjects } from '../../helpers/projects';
+import { openSourceProjects } from '../../assets/helpers/projects';
 
 const OpenSource = () => {
   return (

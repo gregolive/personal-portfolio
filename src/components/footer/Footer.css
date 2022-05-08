@@ -12,8 +12,8 @@ footer {
 }
 
 .footer-title {
-  font-family: 'Fira Code', monospace;
-  font-size: 2rem;
+  font-family: 'Simplaform';
+  font-size: 2.5rem;
   text-shadow: var(--secondary-color) 1px -1px, var(--primary-color) -2px 2px;
 }
 

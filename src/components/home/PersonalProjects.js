@@ -1,4 +1,4 @@
-import { personalProjects } from '../../helpers/projects';
+import { personalProjects } from '../../assets/helpers/projects';
 
 const PersonalProjects = () => {
   return (
