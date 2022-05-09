@@ -35,35 +35,12 @@ export default StyledBanner;
 
 const Console = styled.div`
   font-family: 'Fira Code', monospace;
-  color: white;
-  background: ${(props) => props.theme.primaryColor};
   font-size: 2rem;
+  color: ${(props) => props.theme.backgroundColor};
+  background: ${(props) => props.theme.fontColor};
+  box-shadow: ${(props) => `${props.theme.secondaryColor} 2px -2px, ${props.theme.primaryColor} -3px 3px`};
   padding: 0.5rem 1.5rem;
   position: relative;
-
-  &:after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 1.25rem solid ${(props) => props.theme.backgroundColor};
-    border-bottom: 1.25rem solid transparent;
-    border-right: 1.25rem solid ${(props) => props.theme.backgroundColor};
-    position: absolute;
-    top: -1.25rem;
-    right: 0;
-  }
-
-  &:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom: 1.25rem solid ${(props) => props.theme.backgroundColor};
-    border-top: 1.25rem solid transparent;
-    border-left: 1.25rem solid ${(props) => props.theme.backgroundColor};
-    position: absolute;
-    bottom: -1.25rem;
-    left: 0;
-  }
 
   .prompt {
     font-size: 1.3rem;
@@ -77,7 +54,7 @@ const Console = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.25rem;
 
     .prompt {
       font-size: 1.1rem;
@@ -92,17 +69,8 @@ const Console = styled.div`
   @media screen and (max-width: 480px) {
     padding: 0.5rem 0.7rem;
 
-    &:after {
-      border-top: 1rem solid ${(props) => props.theme.backgroundColor};
-    }
-  
-    &:before {
-      border-bottom: 1rem solid ${(props) => props.theme.backgroundColor};
-    }
-
     .prompt {
-      font-size: 1rem;
-      letter-spacing: -2px;
+      font-size: 0.9rem;
     }
   
     .command {

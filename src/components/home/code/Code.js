@@ -12,8 +12,6 @@ const StyledCode = styled.span`
   font-weight: 500;
   font-style: italic;
   color: ${(props) => props.theme.codeColor};
-  display: grid;
-  text-align: center;
 
   &.opening {
     justify-self: start;

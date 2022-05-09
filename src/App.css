@@ -9,7 +9,9 @@ button {
   cursor: pointer;
 }
 
-
+.bio {
+  padding-bottom: 8rem !important;
+}
 
 @keyframes flip {
   0% {margin-top:-270px;}
@@ -20,16 +22,4 @@ button {
   71% {margin-top:0px;}
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }

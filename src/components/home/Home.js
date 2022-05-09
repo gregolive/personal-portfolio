@@ -1,5 +1,5 @@
 import './Home.css';
-import Banner from './Banner/Banner';
+import Banner from './banner/Banner';
 import Bio from './Bio';
 import Skills from './Skills';
 import PersonalProjects from './PersonalProjects';

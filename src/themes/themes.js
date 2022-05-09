@@ -7,7 +7,7 @@ const lightTheme = {
   bgPrimaryColor: '#2924fb',
   bgSecondaryColor: '#fd23de',
   fontColor: '#0b132b',
-  codeColor: '#D3D3D9',
+  codeColor: '#C8C8D0',
   shadowColor: '#2924fb',
 };
 
@@ -18,7 +18,7 @@ const darkTheme = {
   bgPrimaryColor: '#030250',
   bgSecondaryColor: '#790167',
   fontColor: '#fff',
-  codeColor: '#E6E6EA',
+  codeColor: '#7C7C8D',
   shadowColor: '#fff',
 };
 

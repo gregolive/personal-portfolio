@@ -3,10 +3,7 @@ import StyledHeader, { NavbarLogo, NavbarSwitch, Slider, SwitchIcon, NavbarBurge
 
 const Nav = ({ toggleTheme, scroll }) => {
   const [menu, setMenu] = useState(false);
-
   const toggleMenu = () => setMenu(!menu);
-
-  console.log(scroll)
 
   return (
     <StyledHeader className={(scroll > 150) ? 'solid' : 'clear'}>

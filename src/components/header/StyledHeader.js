@@ -125,7 +125,7 @@ const NavbarBurger = styled.button`
   justify-self: end;
   display: none;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     display: flex;
   }
 `;
@@ -142,12 +142,16 @@ const NavbarMenu = styled.div`
     color: ${(props) => props.theme.textColor};
   }
 
+  .navbar-link {
+    font-size: 1.2rem;
+  }
+
   .navbar-link:hover {
     color: ${(props) => props.theme.shadowColor};
     text-shadow: ${(props) => props.theme.shadowColor} 0 0 15px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 769px) {
     grid-template-columns: auto;
     grid-column: 1 / -1;
     justify-self: center;
