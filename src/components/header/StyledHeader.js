@@ -11,7 +11,7 @@ const StyledHeader = styled.nav`
   position: fixed;
   top: 0;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 2;
   transition: background 0.2s ease;
 
   &.clear {

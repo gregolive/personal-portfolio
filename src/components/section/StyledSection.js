@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 const StyledSection = styled.section`
-  padding: 6rem 6rem 0 6rem;
+  padding: 4rem 6rem 0 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@ const StyledSection = styled.section`
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 6rem 3rem 0 3rem;
+    padding: 4rem 3rem 0 3rem;
 
     .section-description {
       padding: 0;
@@ -34,11 +34,11 @@ const StyledSection = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 6rem 2rem 0 2rem;
+    padding: 4rem 2rem 0 2rem;
   }
 
   @media screen and (max-width: 480px) {  
-    padding: 6rem 1rem 0 1rem;
+    padding: 4rem 1rem 0 1rem;
   }
 `;
 
@@ -63,4 +63,4 @@ const AnimatedSection = styled(StyledSection)`
   animation: ${gradient} 15s ease infinite;
 `;
 
-export { AnimatedSection };
+export { AnimatedSection, gradient };

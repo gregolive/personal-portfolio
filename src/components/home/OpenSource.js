@@ -1,17 +1,13 @@
-import StyledSection from './section/StyledSection';
-import Code from './code/Code';
+import StyledSection from '../section/StyledSection';
+import Code from '../code/Code';
 import { openSourceProjects } from '../../assets/helpers/projects';
 
 const OpenSource = () => {
   return (
-    <StyledSection id='open-source' className='main-section open-source'>
+    <StyledSection id='open-source'>
       <div className='section-description'>
         <Code content={<h2>Open source contributions</h2>} tag='h2' />
-
-        <Code 
-          content={<p>Here are some open source projects I have contributed to.</p>} 
-          tag='p'
-        />
+        <Code content={<p>Here are some open source projects I have contributed to.</p>} tag='p' />
       </div>
   
       <div className='project-grid'>

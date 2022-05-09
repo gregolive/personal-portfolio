@@ -1,47 +1,4 @@
-/* BIO */
 
-
-
-.links {
-  display: flex;
-  gap: 1.3rem;
-}
-
-.links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s;
-}
-
-.links.social-links a {
-  border: 2px solid rgba(255,255,255,0.4);
-  height: 2.8rem;
-  width: 2.8rem;
-  border-radius: 50%;
-}
-
-.links.social-links a:hover {
-  border: 2px solid white;
-}
-
-.links.github-link a {
-  color: var(--primary-color);
-  font-size: 1.1rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 1.6rem;
-  height: 3rem;
-  padding: 0 1rem;
-}
-
-.links.github-link a:hover {
-  color: white;
-  background: var(--primary-color);
-}
-
-.links.github-link a svg {
-  margin-right: 0.3rem;
-}
 
 /* SKILLS */
 
@@ -184,14 +141,6 @@ figcaption a span {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
-  .main-section {
-    padding: 6rem 3rem 0 3rem;
-  }
-
-  .main-section .section-description {
-    padding: 0;
-  }
-
   .skills {
     margin: -6rem 8vw 0 8vw;
     padding: 1.5rem;
@@ -200,18 +149,6 @@ figcaption a span {
 }
 
 @media screen and (max-width: 768px) {
-  .banner h1 {
-    font-size: 2.5rem;
-  }
-
-  .banner-animation > div > span {
-    margin-bottom: 2.5rem;
-  }
-
-  .main-section {
-    padding: 6rem 2rem 0 2rem;
-  }
-
   .skills {
     margin: -6rem 15vw 0 15vw;
     padding: 2rem;
@@ -221,18 +158,6 @@ figcaption a span {
 }
 
 @media screen and (max-width: 480px) {
-  .banner h1 {
-    font-size: 2.3rem;
-  }
-
-  .banner-animation > div > span {
-    margin-bottom: 2.8rem;
-  }
-
-  .main-section {
-    padding: 6rem 1rem 0 1rem;
-  }
-
   .skills {
     margin: -6rem 5vw 0 5vw;
     padding: 1.5rem;

@@ -1,17 +1,13 @@
-import StyledSection from './section/StyledSection';
-import Code from './code/Code';
+import StyledSection from '../section/StyledSection';
+import Code from '../code/Code';
 import { personalProjects } from '../../assets/helpers/projects';
 
 const PersonalProjects = () => {
   return (
-    <StyledSection id='projects' className='main-section projects'>
+    <StyledSection id='projects'>
       <div className='section-description'>
         <Code content={<h2>Recent projects</h2>} tag='h2' />
-
-        <Code 
-          content={<p>Here are some of my personal projects.</p>} 
-          tag='p'
-        />
+        <Code content={<p>Here are some of my personal projects.</p>} tag='p' />
       </div>
 
       <div className='project-grid'>
