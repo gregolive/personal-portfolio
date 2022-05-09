@@ -14,7 +14,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Header toggleTheme={toggleTheme} />
       <Home />
       <Footer />
     </ThemeProvider>
