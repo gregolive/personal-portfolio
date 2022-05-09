@@ -33,9 +33,9 @@ body > * {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: #2924fb;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #030150;
+  background: #0b132b;
 }

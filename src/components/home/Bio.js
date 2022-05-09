@@ -12,7 +12,7 @@ const Bio = () => {
   return (
     <AnimatedSection id='bio' className='bio'>
       <div className='section-description'>
-        <Code content={<h2>Nice to meet you!</h2>} tag='h2' />
+        <Code content={<h2>Hello world!</h2>} tag='h2' />
         <Code content={<p>{bioText}</p>} tag='p' />
       </div>
 

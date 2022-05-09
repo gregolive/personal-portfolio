@@ -9,6 +9,8 @@ const lightTheme = {
   fontColor: '#0b132b',
   codeColor: '#C8C8D0',
   shadowColor: '#2924fb',
+  skillsBorderColor: '#e6ecf8',
+  skillsShadowColor: 'rgba(0,0,0,0.1)',
 };
 
 const darkTheme = {
@@ -20,6 +22,8 @@ const darkTheme = {
   fontColor: '#fff',
   codeColor: '#7C7C8D',
   shadowColor: '#fff',
+  skillsBorderColor: 'rgba(255,255,255,0.5)',
+  skillsShadowColor: 'rgba(255,255,255,0.75)',
 };
 
 const StyledApp = styled.div`
