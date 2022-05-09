@@ -1,23 +1,24 @@
-import { createGlobalStyle } from 'styled-components';
-
-const colorPrimary = '#2924fb';
-const colorSecondary = '#fd23de';
+import styled from 'styled-components';
 
 const lightTheme = {
+  primaryColor: '#2924fb',
+  secondaryColor: '#fd23de',
   background: '#fff',
   fontColor: '#0b132b',
+  shadowColor: '#2924fb',
 };
 
 const darkTheme = {
+  primaryColor: '#2924fb',
+  secondaryColor: '#fd23de',
   background: '#0b132b',
   fontColor: '#fff',
+  shadowColor: '#fff',
 };
 
-const GlobalStyles = createGlobalStyle`
-  body {
-    background: ${(props) => props.theme.background};
-    color: ${(props) => props.theme.fontColor};
-  }
+const StyledApp = styled.div`
+  background: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.fontColor};
 `;
 
-export { lightTheme, darkTheme, GlobalStyles };
+export { lightTheme, darkTheme, StyledApp };

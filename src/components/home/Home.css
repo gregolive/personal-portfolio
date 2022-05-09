@@ -1,7 +1,7 @@
 /* HERO BANNER */
 
 .banner {
-  min-height: calc(100vh - 4rem);
+  min-height: calc(100vh - 3.5rem);
   display: grid;
   place-items: center;
 }
