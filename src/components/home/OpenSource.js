@@ -1,12 +1,17 @@
+import StyledSection from './section/StyledSection';
+import Code from './code/Code';
 import { openSourceProjects } from '../../assets/helpers/projects';
 
 const OpenSource = () => {
   return (
-    <section id='open-source' className='main-section open-source'>
+    <StyledSection id='open-source' className='main-section open-source'>
       <div className='section-description'>
-        <h2>Open source contributions</h2>
+        <Code content={<h2>Open source contributions</h2>} tag='h2' />
 
-        <p>Here are some open source projects I have contributed to.</p>
+        <Code 
+          content={<p>Here are some open source projects I have contributed to.</p>} 
+          tag='p'
+        />
       </div>
   
       <div className='project-grid'>
@@ -30,7 +35,7 @@ const OpenSource = () => {
         <figure></figure>
         <figure></figure>
       </div>
-    </section>
+    </StyledSection>
   );
 };
 

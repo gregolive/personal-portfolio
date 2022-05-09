@@ -1,16 +1,23 @@
 import { AnimatedSection } from './section/StyledSection';
+import Code from './code/Code';
 
 const Bio = () => {
   return (
     <AnimatedSection id='bio' className='bio'>
       <div className='section-description'>
-        <h2>Nice to meet you!</h2>
+        <Code content={<h2>Nice to meet you!</h2>} tag='h2' />
         
-        <p>
-          After starting my coding journey almost 10 years ago with an undergraduate class introducting C++, I have decided to make a bold career move into to web developement. 
-          I am curious, a problem solver, and love working towards improving my skills in whatever I do.
-          I love web development becuase it allows me to flex my creative muscles and create something I am passionate about.
-        </p>
+        <Code 
+          content=
+          {
+            <p>
+              After starting my coding journey almost 10 years ago with an undergraduate class introducting C++, I have decided to make a bold career move into to web developement. 
+              I am curious, a problem solver, and love working towards improving my skills in whatever I do.
+              I love web development becuase it allows me to flex my creative muscles and create something I am passionate about.
+            </p>
+          } 
+          tag='p'
+        />
       </div>
 
       <div className='links social-links'>

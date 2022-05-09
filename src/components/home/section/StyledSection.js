@@ -16,12 +16,13 @@ const StyledSection = styled.section`
     font-size: 1.2rem;
     font-weight: 200;
     line-height: 2rem;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .section-description {
     padding: 0 10vw;
     text-align: center;
+    display: grid;
   }
 
   @media screen and (max-width: 1024px) {

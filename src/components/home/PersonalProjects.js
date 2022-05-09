@@ -1,12 +1,17 @@
+import StyledSection from './section/StyledSection';
+import Code from './code/Code';
 import { personalProjects } from '../../assets/helpers/projects';
 
 const PersonalProjects = () => {
   return (
-    <section id='projects' className='main-section projects'>
+    <StyledSection id='projects' className='main-section projects'>
       <div className='section-description'>
-        <h2>Recent projects</h2>
+        <Code content={<h2>Recent projects</h2>} tag='h2' />
 
-        <p>Here are some of my personal projects.</p>
+        <Code 
+          content={<p>Here are some of my personal projects.</p>} 
+          tag='p'
+        />
       </div>
 
       <div className='project-grid'>
@@ -27,7 +32,7 @@ const PersonalProjects = () => {
           </figure>
         )}
       </div>
-    </section>
+    </StyledSection>
   );
 };
 

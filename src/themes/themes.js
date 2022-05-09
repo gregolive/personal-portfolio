@@ -16,7 +16,7 @@ const darkTheme = {
   secondaryColor: '#fd23de',
   backgroundColor: '#0b132b',
   bgPrimaryColor: '#030250',
-  bgSecondaryColor: '#790167',
+  bgSecondaryColor: '#3617B6',
   fontColor: '#fff',
   codeColor: '#7C7C8D',
   shadowColor: '#fff',
