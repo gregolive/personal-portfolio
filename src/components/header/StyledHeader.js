@@ -1,13 +1,28 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.nav`
+  padding: 0.25rem 2rem;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr repeat(2, auto);
   align-items: center;
   column-gap: 1.5rem;
   line-height: 3rem;
-  padding: 0.25rem 2rem;
-  border-bottom: 1px solid ${(props) => props.theme.fontColor};
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  transition: all 0.3s ease;
+
+  &.clear {
+    background: transparent;
+    border-bottom: none;
+  }
+
+  &.solid {
+    background: ${(props) => props.theme.backgroundColor};
+    border-bottom: 1px solid ${(props) => props.theme.fontColor};
+  }
 `;
 
 export default StyledHeader;
@@ -45,7 +60,7 @@ const NavbarSwitch = styled.label`
 `;
 
 const Slider = styled.span`
-  background: #ccc;
+  background: #192B61;
   border-radius: 0.75rem;
   position: absolute;
   cursor: pointer;
@@ -58,7 +73,7 @@ const Slider = styled.span`
 
   &:before {
     content: "";
-    background-color: white;
+    background: white;
     border-radius: 50%;
     position: absolute;
     height: 1.25rem;
@@ -137,6 +152,7 @@ const NavbarMenu = styled.div`
     grid-column: 1 / -1;
     justify-self: center;
     overflow: hidden;
+    width: 100%;
   
     &.open {
       max-height: 10rem;
@@ -152,7 +168,6 @@ const NavbarMenu = styled.div`
     }
 
     .navbar-link {
-      width: 100%;
       grid-column: 1 / -1;
       text-align: center;
     }

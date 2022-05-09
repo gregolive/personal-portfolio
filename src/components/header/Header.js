@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import StyledHeader, { NavbarLogo, NavbarSwitch, Slider, SwitchIcon, NavbarBurger, NavbarMenu } from './StyledHeader'
 
-const Nav = ({ toggleTheme }) => {
+const Nav = ({ toggleTheme, scroll }) => {
   const [menu, setMenu] = useState(false);
+
   const toggleMenu = () => setMenu(!menu);
 
+  console.log(scroll)
+
   return (
-    <StyledHeader>
+    <StyledHeader className={(scroll > 150) ? 'solid' : 'clear'}>
       <NavbarLogo href='/'>go</NavbarLogo>
 
       <NavbarSwitch>
