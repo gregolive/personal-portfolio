@@ -1,4 +1,4 @@
-import { useState, useEffect, createRef } from 'react';
+import { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import './App.css';
 import { lightTheme, darkTheme, StyledApp } from './themes/themes';
@@ -16,7 +16,6 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
-
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

@@ -12,7 +12,7 @@ const StyledHeader = styled.nav`
   top: 0;
   box-sizing: border-box;
   z-index: 1;
-  transition: all 0.3s ease;
+  transition: background 0.2s ease;
 
   &.clear {
     background: transparent;
