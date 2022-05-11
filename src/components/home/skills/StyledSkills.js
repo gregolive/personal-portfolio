@@ -41,6 +41,9 @@ const StyledSkillCol = styled.div`
   flex-direction: column;
   align-items: center;
   
+  h3 {
+    margin-top: 0.5rem;
+  }
 
   svg {
     color: ${(props) => props.theme.primaryColor};
@@ -55,4 +58,23 @@ const StyledSkillCol = styled.div`
   }
 `;
 
-export { StyledSkillCol };
+const SkillsGrid = styled.ul`
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  li {
+    display: grid;
+  }
+
+  li:last-child:not(:nth-child(even)) {
+    grid-column: 1 / -1;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+`;
+
+export { StyledSkillCol, SkillsGrid };
