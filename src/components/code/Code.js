@@ -11,6 +11,7 @@ const StyledCode = styled.span`
   font-weight: 500;
   font-style: italic;
   color: ${(props) => props.theme.codeColor};
+  opacity: 0.33;
 
   &.opening {
     justify-self: start;
@@ -18,6 +19,24 @@ const StyledCode = styled.span`
 
   &.closing {
     justify-self: end;
+  }
+
+  &.h1-tag {
+    font-size: 1.75rem;
+  }
+  
+  &.h2-tag {
+    font-size: 1.25rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    &.h1-tag {
+      font-size: 1.5rem;
+    }
+    
+    &.h2-tag {
+      font-size: 1rem;
+    }
   }
 `;
 

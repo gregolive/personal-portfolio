@@ -5,12 +5,6 @@
   src: local('Simplaform'), url(./assets/fonts/Simplaform.otf) format('opentype');
 }
 
-:root {
-  --primary-color: #2924fb;
-  --secondary-color: #fd23de;
-  --black: #0b132b;
-}
-
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -20,6 +14,26 @@ body {
 
 body > * {
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none; 
 }
 
 /* CUSTOM SCROLLBAR */

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
-import './App.css';
 import { lightTheme, darkTheme, StyledApp } from './themes/themes';
 import Header from './components/header/Header';
 import Home from './components/home/Home';

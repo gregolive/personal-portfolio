@@ -1,4 +1,3 @@
-import './Footer.css';
 import StyledFooter, { FooterLogo } from './StyledFooter';
 import SocialLinks from '../links/Links';
 
