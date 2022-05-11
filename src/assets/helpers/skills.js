@@ -63,7 +63,7 @@ const tools = [
   },
   {
     text: 'GitHub',
-    icon: <i class="devicon-github-original"></i>,
+    icon: <i className='devicon-github-original'></i>,
   },
   {
     text: 'Heroku',

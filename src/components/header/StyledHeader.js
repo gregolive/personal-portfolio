@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const StyledHeader = styled.nav`
   padding: 0.25rem 2rem;
@@ -27,6 +27,17 @@ const StyledHeader = styled.nav`
 
 export default StyledHeader;
 
+const appear = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 // Logo
 
 const NavbarLogo = styled.a`
@@ -38,25 +49,40 @@ const NavbarLogo = styled.a`
   transition: text-shadow 0.18s ease-in-out;
   justify-self: start;
   letter-spacing: 2px;
+  animation: ${appear} 0.5s ease-out;
+  animation-fill-mode: forwards;
 
   &:hover {
     text-shadow: ${(props) => `${props.theme.primaryColor} 2px -1px, ${props.theme.secondaryColor} -3px 1px`};
+  }
+
+  @media screen and (max-width: 768px) {
+    animation: none;
   }
 `;
 
 // Theme swtich
 
 const NavbarSwitch = styled.label`
+  opacity: 0;
   position: relative;
   display: inline-block;
   width: 2.9rem;
   height: 1.5rem;
   cursor: pointer;
+  animation: ${appear} 0.5s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s;
 
   input {
     opacity: 0;
     width: 0;
     height: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    opacity: 1;
+    animation: none;
   }
 `;
 
@@ -123,10 +149,16 @@ const SwitchIcon = styled.div`
 
 const NavbarBurger = styled.button`
   color: inherit;
+  opacity: 0;
   justify-self: end;
   display: none;
+  animation: ${appear} 0.5s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 
   @media screen and (max-width: 768px) {
+    opacity: 1;
+    animation: none;
     display: flex;
   }
 `;
@@ -144,8 +176,23 @@ const NavbarMenu = styled.div`
   }
 
   .navbar-link {
+    opacity: 0;
     font-size: 1.2rem;
     transition: 0.3s;
+    animation: ${appear} 0.5s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .navbar-link:first-child {
+    animation-delay: 0.5s;
+  }
+
+  .navbar-link:nth-child(2) {
+    animation-delay: 0.75s;
+  }
+
+  .navbar-link:nth-child(3) {
+    animation-delay: 1s;
   }
 
   .navbar-link:hover {
@@ -153,7 +200,7 @@ const NavbarMenu = styled.div`
     text-shadow: ${(props) => props.theme.shadowColor} 0 0 15px;
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: auto;
     grid-column: 1 / -1;
     justify-self: center;
@@ -177,6 +224,8 @@ const NavbarMenu = styled.div`
     .navbar-link {
       grid-column: 1 / -1;
       text-align: center;
+      opacity: 1;
+      animation: none;
     }
   }
 `;

@@ -83,15 +83,15 @@ const Console = styled.div`
 const scrollDown = keyframes`
   0% {
     opacity: 0;
-    transform: translateX(-50%) translateY(-30px);
+    transform: translateY(-2rem);
   }
   40%, 70% {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
   }
   90% {
     opacity: 0;
-    transform: translateX(-50%) translateY(15px);
+    transform: translateY(1rem);
   }
   100% {
     opacity: 0;
@@ -108,12 +108,8 @@ const Arrows = styled.div`
     bottom: 1.5rem;
   }
 
-  svg:first-child {
-    animation-delay: 0s;
-  }
-
   svg:nth-child(2) {
-    animation-delay: .4s;
+    animation-delay: 0.4s;
   }
 
   svg:nth-child(3) {
