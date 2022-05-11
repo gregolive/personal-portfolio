@@ -7,9 +7,9 @@ const lightTheme = {
   bgPrimaryColor: '#2924fb',
   bgSecondaryColor: '#fd23de',
   fontColor: '#0b132b',
-  shadowColor: '#2924fb',
-  skillsBorderColor: '#e6ecf8',
-  skillsShadowColor: 'rgba(0,0,0,0.1)',
+  textShadowColor: '#2924fb',
+  borderColor: '#e6ecf8',
+  boxShadowColor: 'rgba(0,0,0,0.1)',
 };
 
 const darkTheme = {

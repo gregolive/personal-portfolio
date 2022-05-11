@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const StyledSkills = styled.article`
   color: ${(props) => props.theme.fontColor};
   background: ${(props) => props.theme.backgroundColor};
-  border: 1px solid ${(props) => props.theme.skillsBorderColor};
+  border: 1px solid ${(props) => props.theme.borderColor};
   border-radius: 0.8rem;
-  box-shadow: 1px 1px 5px ${(props) => props.theme.skillsShadowColor};
+  box-shadow: 1px 1px 5px ${(props) => props.theme.boxShadowColor};
   margin: -6rem 16vw 2rem 16vw;
   padding: 2rem;
   display: grid;

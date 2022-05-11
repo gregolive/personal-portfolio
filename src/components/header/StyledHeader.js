@@ -28,11 +28,11 @@ const StyledHeader = styled.nav`
 export default StyledHeader;
 
 const appear = keyframes`
-  0% {
+  from {
     opacity: 0;
     transform: translateY(-4rem);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -113,7 +113,7 @@ const Slider = styled.span`
   }
 
   ${NavbarSwitch}:hover &:before{
-    box-shadow: ${(props) => props.theme.shadowColor} 0 0 8px;
+    box-shadow: ${(props) => props.theme.textShadowColor} 0 0 8px;
   }
 
   input:checked + & {
@@ -196,8 +196,8 @@ const NavbarMenu = styled.div`
   }
 
   .navbar-link:hover {
-    color: ${(props) => props.theme.shadowColor};
-    text-shadow: ${(props) => props.theme.shadowColor} 0 0 15px;
+    color: ${(props) => props.theme.textShadowColor};
+    text-shadow: ${(props) => props.theme.textShadowColor} 0 0 15px;
   }
 
   @media screen and (max-width: 768px) {
