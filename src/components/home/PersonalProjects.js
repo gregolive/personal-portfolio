@@ -1,5 +1,4 @@
-import StyledSection from '../section/StyledSection';
-import Code from '../code/Code';
+import { Code, StyledSection } from '../styled/Styled';
 import { personalProjects } from '../../assets/helpers/projects';
 
 const PersonalProjects = () => {

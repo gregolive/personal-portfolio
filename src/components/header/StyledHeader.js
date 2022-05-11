@@ -30,13 +30,14 @@ export default StyledHeader;
 // Logo
 
 const NavbarLogo = styled.a`
-  color: ${(props) => props.theme.fontColor};
+  color: ${(props) => props.theme.backgroundColor};
   font-family: 'Simplaform';
   font-size: 2.5rem;
   padding-top: 0.25rem;
-  text-shadow: ${(props) => `${props.theme.secondaryColor} 1px -1px, ${props.theme.primaryColor} -2px 2px`};
+  text-shadow: ${(props) => `${props.theme.secondaryColor} 2px -2px, ${props.theme.primaryColor} -2px 2px`};
   transition: text-shadow 0.18s ease-in-out;
   justify-self: start;
+  letter-spacing: 2px;
 
   &:hover {
     text-shadow: ${(props) => `${props.theme.primaryColor} 2px -1px, ${props.theme.secondaryColor} -3px 1px`};
@@ -144,6 +145,7 @@ const NavbarMenu = styled.div`
 
   .navbar-link {
     font-size: 1.2rem;
+    transition: 0.3s;
   }
 
   .navbar-link:hover {
@@ -159,6 +161,7 @@ const NavbarMenu = styled.div`
     width: 100%;
   
     &.open {
+      background: ${(props) => props.theme.backgroundColor};
       max-height: 10rem;
       visibility: visible;
       transition: max-height 0.25s ease-in;

@@ -1,5 +1,4 @@
-import StyledSection from '../section/StyledSection';
-import Code from '../code/Code';
+import { Code, StyledSection } from '../styled/Styled';
 import { openSourceProjects } from '../../assets/helpers/projects';
 
 const OpenSource = () => {

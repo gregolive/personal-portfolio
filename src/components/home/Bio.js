@@ -1,5 +1,4 @@
-import { AnimatedSection } from '../section/StyledSection';
-import Code from '../code/Code';
+import { Code, AnimatedSection } from '../styled/Styled';
 import SocialLinks from '../links/Links';
 
 const Bio = () => {

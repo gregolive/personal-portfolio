@@ -1,5 +1,113 @@
 import styled, { keyframes } from 'styled-components';
 
+const StyledCode = styled.span`
+  position: relative;
+  justify-self: center;
+
+  &:before, &:after {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: ${(props) => props.theme.fontColor};
+    opacity: 0.07;
+    position: absolute;
+  }
+
+  &:before {
+    content: '<${(props) => props.className}>';
+    top: -0.75rem;
+    left: -2.25rem;
+  }
+
+  &:after {
+    content: '</${(props) => props.className}>';
+    bottom: -0.75rem;
+    right: -2.75rem;
+  }
+
+  &.h1&:before, &.h1&:after {
+    font-size: 1.75rem;
+    opacity: 0.14;
+  }
+
+  &.h1&:before {
+    top: -2.25rem;
+    left: 0;
+  }
+
+  &.h1&:after {
+    bottom: -2.25rem;
+    right: 0;
+  }
+
+  &.h2&:before {
+    top: -0.75rem;
+    left: -2.75rem;
+  }
+
+  &.h2&:after {
+    bottom: -0.75rem;
+    right: -3.25rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &.p&:before {
+      top: -1rem;
+      left: -1.5rem;
+    }
+  
+    &.p&:after {
+      bottom: -1rem;
+      right: -1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &:before, &:after {
+      font-size: 1rem;
+    }
+
+    &.h1&:before {
+      font-size: 1.5rem;
+      top: -1.75rem;
+    }
+
+    &.h1&:after {
+      font-size: 1.5rem;
+      bottom: -1.75rem;
+    }
+    
+    &.h2&:before {
+      top: -0.5rem;
+      left: -2.5rem;
+    }
+
+    &.h2&:after {
+      bottom: -0.5rem;
+      right: -3rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &.p&:before {
+      left: -0.5rem;
+    }
+  
+    &.p&:after {
+      right: -0.5rem;
+    }
+  }
+`;
+
+const Code = ({ className, content }) => {
+  return (
+    <StyledCode className={className}>
+      {content}
+    </StyledCode>
+  );
+};
+
 const StyledSection = styled.section`
   padding: 4rem 6rem;
   display: flex;
@@ -12,34 +120,31 @@ const StyledSection = styled.section`
     padding-bottom: 8rem !important;
   }
 
-  &:before {
-    content: '<section class="${props => props.id}">';
+  &:before, &:after {
     font-family: 'Fira Code', monospace;
     font-size: 1.1rem;
     font-weight: 500;
     font-style: italic;
     color: ${(props) => props.theme.fontColor};
-    opacity: 0.12;
+    opacity: 0.07;
     position: absolute;
+  }
+
+  &:before {
+    content: '<section class="${(props) => props.id}">';    
     top: 1.5rem;
     left: 3vw;
   }
 
   &:after {
     content: "</section>";
-    font-family: 'Fira Code', monospace;
-    font-size: 1.1rem;
-    font-weight: 500;
-    font-style: italic;
-    color: ${(props) => props.theme.fontColor};
-    opacity: 0.12;
-    position: absolute;
     bottom: 1.5rem;
     right: calc(3vw + 7px);
   }
 
   .bio&:before, .bio&:after, &.bio * *:after, &.bio * *:before {
     color: white;
+    opacity: 0.12;
   }
 
   .section-description {
@@ -69,7 +174,7 @@ const StyledSection = styled.section`
     padding: 4rem 3rem;
 
     &:before {
-      right: 1vw;
+      left: 1vw;
     }
 
     &:after {
@@ -102,8 +207,6 @@ const StyledSection = styled.section`
   }
 `;
 
-export default StyledSection;
-
 const gradient = keyframes`
   0% {
     background-position: 0% 50%;
@@ -123,4 +226,4 @@ const AnimatedSection = styled(StyledSection)`
   animation: ${gradient} 15s ease infinite;
 `;
 
-export { AnimatedSection, gradient };
+export { Code, StyledSection, AnimatedSection, gradient };

@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { init } from 'ityped';
 import StyledBanner, { Console } from './StyledBanner';
-import Code from '../../code/Code';
+import { Code } from '../../styled/Styled';
 
 const Banner = () => {
   const titleRef = useRef();

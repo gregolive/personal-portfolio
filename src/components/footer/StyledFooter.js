@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { gradient } from '../section/StyledSection';
+import { gradient } from '../styled/Styled';
 
 const StyledFooter = styled.footer`
   color: white;
@@ -21,10 +21,11 @@ const StyledFooter = styled.footer`
 export default StyledFooter;
 
 const FooterLogo = styled.a`
-  color: ${(props) => props.theme.fontColor};
+  color: ${(props) => props.theme.backgroundColor};
   font-family: 'Simplaform';
   font-size: 2.5rem;
-  text-shadow: ${(props) => `${props.theme.secondaryColor} 1px -1px, ${props.theme.primaryColor} -2px 2px`};
+  text-shadow: ${(props) => `${props.theme.secondaryColor} 2px -2px, ${props.theme.primaryColor} -2px 2px`};
+  letter-spacing: 2px;
 `;
 
 export { FooterLogo };
