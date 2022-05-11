@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const StyledBanner = styled.section`
   min-height: 100vh;
@@ -7,6 +7,7 @@ const StyledBanner = styled.section`
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  position: relative;
   
   h1 {
     font-size: 5rem;
@@ -79,4 +80,45 @@ const Console = styled.div`
   }
 `;
 
-export { Console };
+const scrollDown = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-30px);
+  }
+  40%, 70% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  90% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(15px);
+  }
+  100% {
+    opacity: 0;
+  }
+`;
+
+const Arrows = styled.div`
+  color: color: ${(props) => props.theme.fontColor};
+
+  svg {
+    opacity: 0;
+    animation: ${scrollDown} 2s ease-out infinite;
+    position: absolute;
+    bottom: 1.5rem;
+  }
+
+  svg:first-child {
+    animation-delay: 0s;
+  }
+
+  svg:nth-child(2) {
+    animation-delay: .4s;
+  }
+
+  svg:nth-child(3) {
+    animation-delay: 0.7s;
+  }
+`;
+
+export { Console, Arrows };
