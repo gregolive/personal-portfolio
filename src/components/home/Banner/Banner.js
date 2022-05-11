@@ -17,7 +17,7 @@ const Banner = () => {
 
   return (
     <StyledBanner className='banner'>
-      <Code content={<h1>GREG OLIVE</h1>} tag='h1' />
+      <Code className='h1' content={<h1>GREG OLIVE</h1>} />
       
       <Console>
         <span className='prompt'>C:\Users\guest&#62;&nbsp;</span>

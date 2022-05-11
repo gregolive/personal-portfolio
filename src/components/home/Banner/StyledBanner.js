@@ -6,7 +6,7 @@ const StyledBanner = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   
   h1 {
     font-size: 5rem;

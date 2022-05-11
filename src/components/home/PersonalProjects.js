@@ -6,8 +6,8 @@ const PersonalProjects = () => {
   return (
     <StyledSection id='projects'>
       <div className='section-description'>
-        <Code content={<h2>Recent projects</h2>} tag='h2' />
-        <Code content={<p>Here are some of my personal projects.</p>} tag='p' />
+        <Code className='h2' content={<h2>Recent projects</h2>} />
+        <Code className='p' content={<p>Here are some of my personal projects.</p>} />
       </div>
 
       <div className='project-grid'>

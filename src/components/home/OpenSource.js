@@ -6,8 +6,8 @@ const OpenSource = () => {
   return (
     <StyledSection id='open-source'>
       <div className='section-description'>
-        <Code content={<h2>Open source contributions</h2>} tag='h2' />
-        <Code content={<p>Here are some open source projects I have contributed to.</p>} tag='p' />
+        <Code className='h2' content={<h2>Open source</h2>} />
+        <Code className='p' content={<p>The open source projects I have contributed to.</p>} />
       </div>
   
       <div className='project-grid'>
