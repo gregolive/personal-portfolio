@@ -53,3 +53,11 @@ li {
 ::-webkit-scrollbar-thumb:hover {
   background: #0b132b;
 }
+
+/* SMOOTH SCROLLING (IF user doesn't motion sensitivity preference) */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

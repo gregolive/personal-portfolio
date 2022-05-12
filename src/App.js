@@ -27,7 +27,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <StyledApp>
         <Header toggleTheme={toggleTheme} scroll={scroll} />
-        <Home />
+        <Home scroll={scroll} />
         <Footer />
       </StyledApp>
     </ThemeProvider>

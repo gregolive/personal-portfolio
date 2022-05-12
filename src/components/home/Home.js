@@ -3,8 +3,9 @@ import Bio from './Bio';
 import Skills from './skills/Skills';
 import PersonalProjects from './PersonalProjects';
 import OpenSource from './OpenSource';
+import TopBtn from './top-btn/TopBtn';
 
-const Home = () => {
+const Home = ({ scroll }) => {
   return (
     <>
       <Banner />
@@ -12,6 +13,7 @@ const Home = () => {
       <Skills />
       <PersonalProjects />
       <OpenSource />
+      <TopBtn scroll={scroll} />
     </>
   );
 };
