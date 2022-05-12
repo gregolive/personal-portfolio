@@ -33,6 +33,10 @@ const StyledCarousel = styled.div`
 
 export default StyledCarousel;
 
+const CarouselContainer = styled.div`
+  justify-self: center;
+`;
+
 const fade = keyframes`
   from {
     opacity: .4
@@ -82,4 +86,4 @@ const Dot = styled.span`
   }
 `;
 
-export { ImgSlide, NavDots, Dot };
+export { CarouselContainer, ImgSlide, NavDots, Dot };

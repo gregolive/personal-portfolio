@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import StyledCarousel, { ImgSlide, NavDots, Dot } from './StyledImgCarousel';
+import StyledCarousel, { CarouselContainer, ImgSlide, NavDots, Dot } from './StyledImgCarousel';
 
 const ImgCarousel = ({ images, color }) => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -18,7 +18,7 @@ const ImgCarousel = ({ images, color }) => {
     } else {
       setSlideIndex(slideIndex + 1);
     }
-  }
+  };
 
   useEffect(() => {
     const autoscroll = window.setInterval(slideRight, 5000);
@@ -26,7 +26,7 @@ const ImgCarousel = ({ images, color }) => {
   });
 
   return (
-    <>
+    <CarouselContainer>
       <StyledCarousel color={color}>
         {images.map((img, i) =>
           <ImgSlide className={(i === slideIndex) ? 'active' : ''} key={i}>
@@ -47,7 +47,7 @@ const ImgCarousel = ({ images, color }) => {
           <Dot color={color} className={(i === slideIndex) ? 'active' : ''} onClick={() => setSlideIndex(i)} key={i} />
         )}
       </NavDots>
-    </>
+    </CarouselContainer>
   );
 };
 

@@ -1,9 +1,16 @@
 const personalProjects = [
   {
     title: 'bitblog',
-    summary: 'A social media app reminiscent of Facebook.',
+    summary: `
+      A platform for creating and managing a blog built using the MERN stack.
+    `,
     tags: [
-      '',
+      'CSS',
+      'Express',
+      'Javascript',
+      'MongoDB',
+      'Node.js',
+      'React',
     ],
     images: [
       {
