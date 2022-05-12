@@ -8,6 +8,8 @@ const lightTheme = {
   textShadowColor: '#2924fb',
   borderColor: '#e6ecf8',
   boxShadowColor: 'rgba(0,0,0,0.1)',
+  inputColor: '#f5f5fa',
+  placeholderColor: '#adadb8',
 };
 
 const darkTheme = {
@@ -20,6 +22,8 @@ const darkTheme = {
   textShadowColor: '#fff',
   borderColor: 'rgba(255,255,255,0.5)',
   boxShadowColor: 'rgba(255,255,255,0.75)',
+  inputColor: '#152451',
+  placeholderColor: '#5e5e66',
 };
 
 export { lightTheme, darkTheme };

@@ -72,7 +72,7 @@ const NavbarSwitch = styled.label`
   cursor: pointer;
   animation: ${appear} 0.5s ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.25s;
+  animation-delay: 0.2s;
 
   input {
     opacity: 0;
@@ -152,13 +152,9 @@ const NavbarBurger = styled.button`
   opacity: 0;
   justify-self: end;
   display: none;
-  animation: ${appear} 0.5s ease-out;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
 
   @media screen and (max-width: 768px) {
     opacity: 1;
-    animation: none;
     display: flex;
   }
 `;
@@ -204,14 +200,18 @@ const NavbarLink = styled.a`
   animation-fill-mode: forwards;
 
   &:first-child {
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
   }
 
   &:nth-child(2) {
-    animation-delay: 0.75s;
+    animation-delay: 0.6s;
   }
 
   &:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+
+  &:nth-child(4) {
     animation-delay: 1s;
   }
 

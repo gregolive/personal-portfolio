@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import StyledContactForm from './StyledContactForm';
+import StyledContactForm, { StyledInput, StyledTextarea, SubmitButton } from './StyledContactForm';
 
 const ContactForm = () => {
   const form = useRef();
@@ -19,15 +19,12 @@ const ContactForm = () => {
 
   return (
     <StyledContactForm ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Subject</label>
-      <input type="subject" name="subject" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <StyledInput type='text' name='user_name' placeholder='Name' />
+      <StyledInput type='email' name='user_email' placeholder='Email' />
+      <StyledInput type='subject' name='subject' placeholder='Subject' />
+      <StyledTextarea name='message' placeholder='Message' rows='4' />
+
+      <SubmitButton type='submit'>Send</SubmitButton>
     </StyledContactForm>
   );
 };
