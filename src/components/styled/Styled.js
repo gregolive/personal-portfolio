@@ -109,7 +109,7 @@ const Code = ({ className, content }) => {
 };
 
 const StyledSection = styled.section`
-  padding: 4rem 6rem;
+  padding: 3rem 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,13 +132,13 @@ const StyledSection = styled.section`
 
   &:before {
     content: '<section class="${(props) => props.id}">';    
-    top: 1.5rem;
+    top: 1rem;
     left: 3vw;
   }
 
   &:after {
     content: "</section>";
-    bottom: 1.5rem;
+    bottom: 1rem;
     right: calc(3vw + 7px);
   }
 
@@ -171,9 +171,10 @@ const StyledSection = styled.section`
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 4rem 3rem;
+    padding: 3rem 3rem;
 
     &:before {
+      top: 0.5rem;
       left: 1vw;
     }
 
@@ -191,7 +192,7 @@ const StyledSection = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
 
     &:before, &:after {
       font-size: 1rem;
@@ -199,7 +200,7 @@ const StyledSection = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
 
     p {
       font-size: 1.1rem;

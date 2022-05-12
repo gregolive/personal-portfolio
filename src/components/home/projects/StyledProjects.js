@@ -30,7 +30,7 @@ const StyledProject = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    gap: 3vw;
+    gap: 2vw;
   }
 
   @media screen and (max-width: 768px) {
@@ -48,7 +48,12 @@ const ProjectTitle = styled.h3`
   display: flex;
   gap: 0.75rem;
 
+  @media screen and (max-width: 1024px) {
+    font-size: 1.55rem;
+  }
+
   @media screen and (max-width: 768px) {
+    font-size: 1.65rem;
     justify-content: center;
   }
 `;

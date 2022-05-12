@@ -1,4 +1,3 @@
-import './Home.css';
 import Banner from './banner/Banner';
 import Bio from './Bio';
 import Skills from './skills/Skills';
@@ -9,12 +8,10 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <main>
-        <Bio />
-        <Skills />
-        <PersonalProjects />
-        <OpenSource />
-      </main>
+      <Bio />
+      <Skills />
+      <PersonalProjects />
+      <OpenSource />
     </>
   );
 };

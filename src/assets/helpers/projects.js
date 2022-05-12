@@ -233,8 +233,23 @@ const openSourceProjects = [
   {
     title: 'The Odin Project',
     summary: 'An open curriculum for learning web development.',
-    img: require('../img/thumbnails/odin-project.jpg'),
-    link: 'https://github.com/TheOdinProject/curriculum'
+    images: [
+      {
+        src: require('../img/odin/home.jpg'),
+        alt: 'odin project home screen',
+      },
+      {
+        src: require('../img/odin/javascript.jpg'),
+        alt: 'odin project javascript course',
+      },
+      {
+        src: require('../img/odin/overview.jpg'),
+        alt: 'odin project overview',
+      },
+    ],
+    color: '#D4AE63',
+    repo: 'https://github.com/TheOdinProject/curriculum',
+    link: 'https://www.theodinproject.com/',
   },
 ];
 
