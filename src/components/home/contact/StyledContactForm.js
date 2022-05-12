@@ -4,7 +4,7 @@ const StyledContactForm = styled.form`
   width: 80%;
   display: grid;
   grid-template: repeat(3, auto) / repeat(2, 1fr);
-  gap: 1rem;
+  column-gap: 1rem;
 
   * {
     font-family: 'Inter', sans-serif;
@@ -12,7 +12,7 @@ const StyledContactForm = styled.form`
     border-radius: 0.3rem;
   }
 
-  *:not(:last-child) {
+  *:not(:last-child):not(:nth-child(5)) {
     background: ${(props) => props.theme.inputColor};
     color: ${(props) => props.theme.fontColor};
     border: none;
@@ -36,6 +36,8 @@ const StyledContactForm = styled.form`
 export default StyledContactForm;
 
 const StyledInput = styled.input`
+  margin-bottom: 1rem;
+
   &:nth-child(3) {
     grid-column: 1 / -1;
   }
@@ -44,6 +46,13 @@ const StyledInput = styled.input`
 const StyledTextarea = styled.textarea`
   grid-column: 1 / -1;
   resize: vertical;
+  margin-bottom: 0.5rem;
+`;
+
+const ErrorMsg = styled.small`
+  font-size: 0.85rem;
+  color: #ff3860;
+  background: none;
 `;
 
 const SubmitButton = styled.button`
@@ -52,7 +61,9 @@ const SubmitButton = styled.button`
   color: rgba(255,255,255,0.6);
   border: 1px solid rgba(255,255,255,0.4);
   width: 6rem;
+  margin-top: 0.5rem;
   padding: 0.3rem 0;
+  grid-column: 1 / -1;
   justify-self: start;
   transition: all 0.4s ease;
 
@@ -68,4 +79,4 @@ const SubmitButton = styled.button`
   }
 `;
 
-export { StyledInput, StyledTextarea, SubmitButton };
+export { StyledInput, StyledTextarea, ErrorMsg, SubmitButton };
