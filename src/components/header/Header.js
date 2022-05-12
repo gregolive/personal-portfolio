@@ -5,7 +5,6 @@ const Nav = ({ toggleTheme, scroll }) => {
   const [menu, setMenu] = useState(false);
   const toggleMenu = () => setMenu(!menu);
 
-  console.log(scroll)
   return (
     <StyledHeader className={(scroll > 150) ? 'solid' : 'clear'}>
       <NavbarLogo href='/'>go</NavbarLogo>
@@ -24,7 +23,8 @@ const Nav = ({ toggleTheme, scroll }) => {
       <NavbarMenu className={(menu) ? 'navbar-menu open' : 'navbar-menu close'}>
         <NavbarLink href='#bio' className={(scroll >= 400 && scroll < 1300) ? 'active' : ''}>Bio</NavbarLink>
         <NavbarLink href='#projects' className={(scroll >= 1300 && scroll < 3650) ? 'active' : ''}>Projects</NavbarLink>
-        <NavbarLink href='#open-source' className={(scroll >= 3650 && scroll < 5000) ? 'active' : ''}>Open source</NavbarLink>
+        <NavbarLink href='#open-source' className={(scroll >= 3650 && scroll < 4400) ? 'active' : ''}>Open source</NavbarLink>
+        <NavbarLink href='#contact' className={(scroll >= 4400) ? 'active' : ''}>Contact</NavbarLink>
       </NavbarMenu>
     </StyledHeader>
   );
