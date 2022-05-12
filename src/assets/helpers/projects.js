@@ -5,12 +5,30 @@ const personalProjects = [
       A platform for creating and managing a blog built using the MERN stack.
     `,
     tags: [
-      'CSS',
-      'Express',
-      'Javascript',
-      'MongoDB',
-      'Node.js',
-      'React',
+      {
+        text: 'CSS',
+        icon: <i className='devicon-css3-plain'></i>,
+      },
+      {
+        text: 'Express',
+        icon: <i className='devicon-express-original'></i>,
+      },
+      {
+        text: 'Javascript',
+        icon: <i className='devicon-javascript-plain'></i>,
+      },
+      {
+        text: 'MongoDB',
+        icon: <i className='devicon-mongodb-plain'></i>,
+      },
+      {
+        text: 'Node.js',
+        icon: <i className='devicon-nodejs-plain'></i>,
+      },
+      {
+        text: 'React',
+        icon: <i className='devicon-react-original'></i>,
+      },
     ],
     images: [
       {

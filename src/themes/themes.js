@@ -1,5 +1,3 @@
-import styled from 'styled-components';
-
 const lightTheme = {
   primaryColor: '#2924fb',
   secondaryColor: '#fd23de',
@@ -19,14 +17,9 @@ const darkTheme = {
   bgPrimaryColor: '#030250',
   bgSecondaryColor: '#3617B6',
   fontColor: '#fff',
-  shadowColor: '#fff',
-  skillsBorderColor: 'rgba(255,255,255,0.5)',
-  skillsShadowColor: 'rgba(255,255,255,0.75)',
+  textShadowColor: '#fff',
+  borderColor: 'rgba(255,255,255,0.5)',
+  boxShadowColor: 'rgba(255,255,255,0.75)',
 };
 
-const StyledApp = styled.div`
-  background: ${(props) => props.theme.backgroundColor};
-  color: ${(props) => props.theme.fontColor};
-`;
-
-export { lightTheme, darkTheme, StyledApp };
+export { lightTheme, darkTheme };

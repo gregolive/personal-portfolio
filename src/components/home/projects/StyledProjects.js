@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ProjectGrid = styled.div`
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 export default ProjectGrid;
@@ -20,11 +20,8 @@ const StyledProject = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
     text-align: center;
-
-    .project-overview {
-      grid-row: 1 / 2;
-    }
   }
 `;
 
@@ -68,7 +65,10 @@ const ProjectTags = styled.div`
     background: ${(props) => props.theme.backgroundColor};
     border: 1px solid ${(props) => props.color};
     border-radius: 1rem;
-    padding: 0.1rem 0.8rem;
+    padding: 0.3rem 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     text-align: center;
     cursor: default;
     transition: 0.4s;
@@ -77,6 +77,10 @@ const ProjectTags = styled.div`
   span:hover {
     color: ${(props) => props.theme.backgroundColor};
     background: ${(props) => props.color};
+  }
+
+  span i {
+    font-size: 1.25rem;
   }
 
   @media screen and (max-width: 768px) {

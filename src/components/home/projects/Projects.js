@@ -25,7 +25,12 @@ const Projects = ({ projects }) => {
             <p>{project.summary}</p>
 
             <ProjectTags color={project.color}>
-              {project.tags.map((tag, i) => <span key={i}>{tag}</span> )}
+              {project.tags.map((tag, i) => 
+                <span key={i}>
+                  {tag.icon}
+                  {tag.text}
+                </span>
+              )}
             </ProjectTags>
           </div>
         </StyledProject>

@@ -1,9 +1,14 @@
 import { useState, useEffect } from 'react';
-import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, StyledApp } from './themes/themes';
+import styled, { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from './themes/themes';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
+
+const StyledApp = styled.div`
+  background: ${(props) => props.theme.backgroundColor};
+  color: ${(props) => props.theme.fontColor};
+`;
 
 const App = () => {
   const [theme, setTheme] = useState(lightTheme);
