@@ -4,8 +4,8 @@ const StyledCarousel = styled.div`
   position: relative;
 
   button {
-    color: black;
-    opacity: 0.33;
+    color: gray;
+    opacity: 0.5;
     padding: 0;
     position: absolute;
     top: 50%;

@@ -26,7 +26,7 @@ const ImgCarousel = ({ images, color }) => {
   });
 
   return (
-    <CarouselContainer>
+    <CarouselContainer className='carousel'>
       <StyledCarousel color={color}>
         {images.map((img, i) =>
           <ImgSlide className={(i === slideIndex) ? 'active' : ''} key={i}>

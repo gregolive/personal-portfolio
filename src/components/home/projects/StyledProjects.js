@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ProjectGrid = styled.div`
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
 `;
 
 export default ProjectGrid;
@@ -16,6 +16,21 @@ const StyledProject = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:nth-child(even) .project-overview {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    &:nth-child(even) .carousel {
+      grid-column: 2 / 3;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 3vw;
   }
 
   @media screen and (max-width: 768px) {
