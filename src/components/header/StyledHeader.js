@@ -171,35 +171,6 @@ const NavbarMenu = styled.div`
   grid-template-columns: repeat(3, auto);
   column-gap: 1.5rem;
 
-  .navbar {
-    color: ${(props) => props.theme.textColor};
-  }
-
-  .navbar-link {
-    opacity: 0;
-    font-size: 1.2rem;
-    transition: 0.3s;
-    animation: ${appear} 0.5s ease-out;
-    animation-fill-mode: forwards;
-  }
-
-  .navbar-link:first-child {
-    animation-delay: 0.5s;
-  }
-
-  .navbar-link:nth-child(2) {
-    animation-delay: 0.75s;
-  }
-
-  .navbar-link:nth-child(3) {
-    animation-delay: 1s;
-  }
-
-  .navbar-link:hover {
-    color: ${(props) => props.theme.textShadowColor};
-    text-shadow: ${(props) => props.theme.textShadowColor} 0 0 15px;
-  }
-
   @media screen and (max-width: 768px) {
     grid-template-columns: auto;
     grid-column: 1 / -1;
@@ -220,14 +191,62 @@ const NavbarMenu = styled.div`
       visibility: hidden;
       transition: max-height 0.15s ease-out;
     }
+  }
+`;
 
-    .navbar-link {
-      grid-column: 1 / -1;
-      text-align: center;
-      opacity: 1;
-      animation: none;
+const NavbarLink = styled.a`
+  opacity: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+  animation: ${appear} 0.5s ease-out;
+  animation-fill-mode: forwards;
+
+  &:first-child {
+    animation-delay: 0.5s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.75s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 1s;
+  }
+
+  &:hover {
+    color: ${(props) => props.theme.textShadowColor};
+    text-shadow: ${(props) => props.theme.textShadowColor} 0 0 15px;
+  }
+
+  &:before {
+    content: "";
+    background: ${(props) => props.theme.primaryColor};
+    border-radius: 0.5rem;
+    opacity: 0.08;
+    width: 0;
+    height: 50%;
+    position: absolute;
+    left: -0.5rem;
+    bottom: 25%;
+    transition: width 0.4s ease-out;
+  }
+
+  &.active&:before {
+    width: calc(100% + 1rem);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-column: 1 / -1;
+    text-align: center;
+    opacity: 1;
+    animation: none;
+
+    &:before {
+      opacity: 0;
     }
   }
 `;
 
-export { NavbarLogo, NavbarSwitch, Slider, SwitchIcon, NavbarBurger, NavbarMenu };
+export { NavbarLogo, NavbarSwitch, Slider, SwitchIcon, NavbarBurger, NavbarMenu, NavbarLink };

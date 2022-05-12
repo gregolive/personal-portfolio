@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledTopBtn = styled.button`
   background: ${(props) => props.theme.primaryColor};
-  color: ${(props) => props.theme.secondaryColor};
+  color: white;
   border-radius: 50%;
   height: 3.3rem;
   width: 3.3rem;

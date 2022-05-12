@@ -158,7 +158,7 @@ const StyledSection = styled.section`
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin: 0;
   }
 
@@ -201,6 +201,10 @@ const StyledSection = styled.section`
 
   @media screen and (max-width: 480px) {
     padding: 3rem 1rem;
+
+    h2 {
+      font-size: 2rem;
+    }
 
     p {
       font-size: 1.1rem;
