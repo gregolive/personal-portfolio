@@ -1,18 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7fa510fd.css",
-    "main.js": "/portfolio/static/js/main.4a998ad1.js",
-    "static/media/flashing-smoke.gif": "/portfolio/static/media/flashing-smoke.9b4aa3925170990e2b00.gif",
-    "static/media/flickr-photostream.jpg": "/portfolio/static/media/flickr-photostream.8cdefa13191974149578.jpg",
-    "static/media/eventive.jpg": "/portfolio/static/media/eventive.522734b1811fbb060bfe.jpg",
-    "static/media/together.jpg": "/portfolio/static/media/together.6c9da0eed78dd4abfe47.jpg",
-    "static/media/odin-project.jpg": "/portfolio/static/media/odin-project.1f7123c1b90edb5ac346.jpg",
+    "main.css": "/portfolio/static/css/main.642e8f8b.css",
+    "main.js": "/portfolio/static/js/main.bb387a86.js",
+    "static/media/dashboard.jpg": "/portfolio/static/media/dashboard.63595cfe313e442bf268.jpg",
+    "static/media/ski-slopes.jpg": "/portfolio/static/media/ski-slopes.0b5317775822f39d9bfb.jpg",
+    "static/media/outer-space.jpg": "/portfolio/static/media/outer-space.c1d89059fbdd0aec3c6b.jpg",
+    "static/media/player-board.jpg": "/portfolio/static/media/player-board.84a24a2ad0cbd7c10fd3.jpg",
+    "static/media/game-over.jpg": "/portfolio/static/media/game-over.38fabd5b3dab065c340c.jpg",
+    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.ea3b975dc416d81c4761.jpg",
+    "static/media/enemy-board.jpg": "/portfolio/static/media/enemy-board.b5e98ff17686ea87966b.jpg",
+    "static/media/home.jpg": "/portfolio/static/media/home.a95d074281922db9ec37.jpg",
+    "static/media/place-ships.jpg": "/portfolio/static/media/place-ships.cab17f2c0b0fc79c8ac8.jpg",
+    "static/media/javascript.jpg": "/portfolio/static/media/javascript.bdc5873612e386761d7b.jpg",
+    "static/media/transaction-view.jpg": "/portfolio/static/media/transaction-view.acead460c5581f16ca07.jpg",
+    "static/media/transactions.jpg": "/portfolio/static/media/transactions.6b28adc1c85fd51c5f83.jpg",
+    "static/media/dashboard2.jpg": "/portfolio/static/media/dashboard2.a997914348441f638c25.jpg",
+    "static/media/login.jpg": "/portfolio/static/media/login.5e869b8e2b36b940c129.jpg",
+    "static/media/level-select.jpg": "/portfolio/static/media/level-select.3c6574dbde073dc95bb6.jpg",
+    "static/media/overview.jpg": "/portfolio/static/media/overview.7395022615ce27c72f26.jpg",
+    "static/media/post-form.jpg": "/portfolio/static/media/post-form.b46a03c806fac61c507b.jpg",
+    "static/media/Simplaform.otf": "/portfolio/static/media/Simplaform.cc3c693ae3f7e52df56a.otf",
     "index.html": "/portfolio/index.html",
-    "main.7fa510fd.css.map": "/portfolio/static/css/main.7fa510fd.css.map",
-    "main.4a998ad1.js.map": "/portfolio/static/js/main.4a998ad1.js.map"
+    "main.642e8f8b.css.map": "/portfolio/static/css/main.642e8f8b.css.map",
+    "main.bb387a86.js.map": "/portfolio/static/js/main.bb387a86.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fa510fd.css",
-    "static/js/main.4a998ad1.js"
+    "static/css/main.642e8f8b.css",
+    "static/js/main.bb387a86.js"
   ]
 }
