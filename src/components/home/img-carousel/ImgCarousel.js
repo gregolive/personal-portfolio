@@ -23,7 +23,8 @@ const ImgCarousel = ({ images, color }) => {
   useEffect(() => {
     const autoscroll = window.setInterval(slideRight, 5000);
     return () => window.clearInterval(autoscroll);
-  });
+    // eslint-disable-next-line
+  }, [slideIndex]);
 
   return (
     <CarouselContainer className='carousel'>
