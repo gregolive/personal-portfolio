@@ -3,10 +3,10 @@ import SocialLinks from '../links/Links';
 
 const Bio = () => {
   const bioText = `
-    After starting my coding journey almost 10 years ago with an undergraduate class introducting C++, I have decided to make a bold career move into to web developement. 
-    I am curious, a problem solver, and love working towards improving my skills in whatever I do.
-    I was drawn to web development becuase it allows me to flex my creative muscles while creating something I am passionate about.
-    I am open for new opportunities or people to share ideas with!
+    After starting my coding journey almost 10 years ago with an undergraduate class introducing C++, I have decided to make a bold career move into web development. 
+    I am a problem solver, curious, and love working towards improving my skills in whatever I do.
+    I was drawn to web development because it allows me to flex my creative muscles while creating something I am passionate about.
+    I am open to new opportunities or people to share ideas with!
   `;
 
   return (

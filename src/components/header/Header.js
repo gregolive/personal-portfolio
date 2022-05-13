@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import StyledHeader, { NavbarLogo, NavbarSwitch, Slider, SwitchIcon, NavbarBurger, NavbarMenu, NavbarLink } from './StyledHeader'
 
-const Nav = ({ toggleTheme, scroll, dark }) => {
+const Nav = ({ toggleTheme, dark, scroll }) => {
   const [menu, setMenu] = useState(false);
   const toggleMenu = () => setMenu(!menu);
+  const closeMenu = () => setMenu(false);
 
   return (
-    <StyledHeader className={(scroll > 150) ? 'solid' : 'clear'}>
+    <StyledHeader>
       <NavbarLogo href='/'>go</NavbarLogo>
 
       <NavbarSwitch>
@@ -21,10 +22,10 @@ const Nav = ({ toggleTheme, scroll, dark }) => {
       </NavbarBurger>
 
       <NavbarMenu className={(menu) ? 'navbar-menu open' : 'navbar-menu close'}>
-        <NavbarLink href='#bio' className={(scroll >= 400 && scroll < 1300) ? 'active' : ''}>Bio</NavbarLink>
-        <NavbarLink href='#projects' className={(scroll >= 1300 && scroll < 3650) ? 'active' : ''}>Projects</NavbarLink>
-        <NavbarLink href='#open-source' className={(scroll >= 3650 && scroll < 4400) ? 'active' : ''}>Open source</NavbarLink>
-        <NavbarLink href='#contact' className={(scroll >= 4400) ? 'active' : ''}>Contact</NavbarLink>
+        <NavbarLink href='#bio' className={(scroll >= 400 && scroll < 1300) ? 'active' : ''} onClick={closeMenu}>Bio</NavbarLink>
+        <NavbarLink href='#projects' className={(scroll >= 1300 && scroll < 3650) ? 'active' : ''} onClick={closeMenu}>Projects</NavbarLink>
+        <NavbarLink href='#open-source' className={(scroll >= 3650 && scroll < 4400) ? 'active' : ''} onClick={closeMenu}>Open source</NavbarLink>
+        <NavbarLink href='#contact' className={(scroll >= 4400) ? 'active' : ''} onClick={closeMenu}>Contact</NavbarLink>
       </NavbarMenu>
     </StyledHeader>
   );

@@ -1,6 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
 const StyledHeader = styled.nav`
+  background: ${(props) => props.theme.backgroundColor};
+  border-bottom: 1px solid ${(props) => props.theme.fontColor};
   padding: 0.25rem 2rem;
   width: 100%;
   display: grid;
@@ -13,16 +15,6 @@ const StyledHeader = styled.nav`
   box-sizing: border-box;
   z-index: 2;
   transition: background 0.2s ease;
-
-  &.clear {
-    background: transparent;
-    border-bottom: none;
-  }
-
-  &.solid {
-    background: ${(props) => props.theme.backgroundColor};
-    border-bottom: 1px solid ${(props) => props.theme.fontColor};
-  }
 `;
 
 export default StyledHeader;
@@ -176,7 +168,7 @@ const NavbarMenu = styled.div`
   
     &.open {
       background: ${(props) => props.theme.backgroundColor};
-      max-height: 10rem;
+      max-height: 15rem;
       visibility: visible;
       transition: max-height 0.25s ease-in;
       padding-bottom: 0.5rem;
