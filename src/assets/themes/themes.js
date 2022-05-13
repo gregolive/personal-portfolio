@@ -10,6 +10,8 @@ const lightTheme = {
   boxShadowColor: 'rgba(0,0,0,0.1)',
   inputColor: '#f5f5fa',
   placeholderColor: '#adadb8',
+  headerHighlightColor: '#2924fb',
+  headerHighlightOpacity: '0.08',
 };
 
 const darkTheme = {
@@ -24,6 +26,8 @@ const darkTheme = {
   boxShadowColor: 'rgba(255,255,255,0.75)',
   inputColor: '#152451',
   placeholderColor: '#5e5e66',
+  headerHighlightColor: '#fff',
+  headerHighlightOpacity: '0.1',
 };
 
 export { lightTheme, darkTheme };

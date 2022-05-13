@@ -223,9 +223,9 @@ const NavbarLink = styled.a`
 
   &:before {
     content: "";
-    background: ${(props) => props.theme.primaryColor};
+    background: ${(props) => props.theme.headerHighlightColor};
     border-radius: 0.5rem;
-    opacity: 0.08;
+    opacity: ${(props) => props.theme.headerHighlightOpacity};
     width: 0;
     height: 50%;
     position: absolute;
