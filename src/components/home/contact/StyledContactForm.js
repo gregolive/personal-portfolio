@@ -23,6 +23,12 @@ const StyledContactForm = styled.form`
     }
   }
 
+  button {
+    margin-top: 0.5rem;
+    justify-self: start;
+    grid-column: 1 / -1;
+  }
+
   @media screen and (max-width: 1024px) {
     width: 90%;
   }
@@ -30,6 +36,10 @@ const StyledContactForm = styled.form`
   @media screen and (max-width: 768px) {
     width: 100%;
     grid-template-columns: 1fr;
+
+    button {
+      justify-self: stretch;
+    }
   }
 `;
 
@@ -55,28 +65,4 @@ const ErrorMsg = styled.small`
   background: none;
 `;
 
-const SubmitButton = styled.button`
-  font-weight: 500;
-  background: ${(props) => props.theme.primaryColor};
-  color: rgba(255,255,255,0.6);
-  border: 1px solid rgba(255,255,255,0.4);
-  width: 6rem;
-  margin-top: 0.5rem;
-  padding: 0.3rem 0;
-  grid-column: 1 / -1;
-  justify-self: start;
-  transition: all 0.4s ease;
-
-  :hover {
-    color: rgba(255,255,255,0.9);
-    border: 1px solid rgba(255,255,255,0.9);
-    letter-spacing: 1px;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: auto;
-    justify-self: stretch;
-  }
-`;
-
-export { StyledInput, StyledTextarea, ErrorMsg, SubmitButton };
+export { StyledInput, StyledTextarea, ErrorMsg };
