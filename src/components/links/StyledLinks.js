@@ -7,7 +7,7 @@ const StyledLinks = styled.div`
 
 export default StyledLinks;
 
-const Link = styled.a`
+const StyledLink = styled.a`
   border: 2px solid rgba(255,255,255,0.4);
   height: 2.8rem;
   width: 2.8rem;
@@ -22,4 +22,4 @@ const Link = styled.a`
   }
 `;
 
-export { Link };
+export { StyledLink };
