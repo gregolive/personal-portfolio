@@ -76,6 +76,7 @@ const ProjectTags = styled.div`
   font-family: 'Fira Code', monospace;
   font-size: 0.9rem;
   font-weight: 300;
+  margin-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;

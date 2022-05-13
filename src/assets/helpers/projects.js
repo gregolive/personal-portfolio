@@ -2,7 +2,10 @@ const personalProjects = [
   {
     title: 'bitblog',
     summary: `
-      A platform for creating and managing a blog built using the MERN stack.
+      A platform for creating and managing a blog, built using the MERN stack.
+      User authentication is handled via a simple username & password strategy with password hashing and salting for secure storage.
+      JSON Web Tokens ensure that users remain authenticated as they navigate the site.
+      The responsive app features a TinyMCE rich text editor that allows for the creation of clean, properly formatted blog posts.
     `,
     tags: [
       {
@@ -60,6 +63,9 @@ const personalProjects = [
     title: "Where's Waldo",
     summary: `
       Search for Waldo and friends in this online version of the classic books.
+      This is a multi-technology app with a React frontend and a Ruby on Rails backend.
+      The React client deployed with Github pages makes calls to the Rails API deployed on Heroku where images, map data, and other assets are stored.
+      On each of the 6 levels, users must find 4 waldo characters hidden throughout the map and are presented with a form to submit their solve time.
     `,
     tags: [
       {
@@ -116,7 +122,9 @@ const personalProjects = [
   {
     title: 'Tendies Tracker',
     summary: `
-      An app to track your stock holdings.
+      A full-stack app to track your stock holdings, created with Express, MongoDB, and more.
+      The platform provides real-time stock data from finnhub to ensure that users stay up to date on their portfolio.
+      Features secure user authentication with hashed and salted passwords, a dashboard that provides daily and all-time portfolio statistics, and a portfolio page with a full portfolio breakdown, down to each holding.
     `,
     tags: [
       {
@@ -177,7 +185,10 @@ const personalProjects = [
   {
     title: 'Retro Battleship',
     summary: `
-      Take to the high seas and test your luck against the computer in this classic guessing game.
+      Take to the high seas and test your luck against the computer in the classic guessing game.
+      This is a single-page application built in vanilla JavaScript using a test-driven development approach via the Jest testing framework.
+      Users select a computer difficulty, place their ships and then take turns guessing locations on the opponent's board.
+      Last one standing (or floating) wins!
     `,
     tags: [
       {
@@ -232,7 +243,11 @@ const personalProjects = [
 const openSourceProjects = [
   {
     title: 'The Odin Project',
-    summary: 'An open curriculum for learning web development.',
+    summary: `
+      A hands-on, open curriculum for learning web development with 3 learning paths: Foundations, Full Stack Ruby on Rails, and Full Stack Javascript.
+      My contributions include updating curriculum Markdown files for typos and adding links to additional resources related to lesson topics.
+      Contributing to The Odin Project has helped me to learn various aspects of Git workflow, such as opening and merging branches, creating pull requests, and opening new issues.
+    `,
     images: [
       {
         src: require('../img/odin/home.jpg'),
