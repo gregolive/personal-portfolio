@@ -16,7 +16,7 @@ const Bio = () => {
         <Code className='p' content={<p>{bioText}</p>} />
       </div>
 
-      <SocialLinks />
+      <SocialLinks email={true} />
     </AnimatedSection>
   );
 };

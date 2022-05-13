@@ -15,6 +15,10 @@ const StyledHeader = styled.nav`
   box-sizing: border-box;
   z-index: 2;
   transition: background 0.2s ease;
+
+  @media screen and (max-width: 480px) {
+    padding: 0.25rem 1rem;
+  }
 `;
 
 export default StyledHeader;
@@ -135,6 +139,10 @@ const SwitchIcon = styled.div`
   &.sun {
     right: 0.15rem;
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.95rem;
+  }
 `;
 
 // Burger
@@ -144,6 +152,7 @@ const NavbarBurger = styled.button`
   opacity: 0;
   justify-self: end;
   display: none;
+  padding: 0;
 
   @media screen and (max-width: 768px) {
     opacity: 1;

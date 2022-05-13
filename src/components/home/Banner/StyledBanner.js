@@ -106,6 +106,7 @@ const Arrows = styled.div`
     animation: ${scrollDown} 2s ease-out infinite;
     position: absolute;
     bottom: 1.5rem;
+    left: calc(50vw - 18px);
   }
 
   svg:nth-child(2) {

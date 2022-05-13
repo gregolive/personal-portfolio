@@ -8,7 +8,7 @@ const Nav = ({ toggleTheme, dark, scroll }) => {
 
   return (
     <StyledHeader>
-      <NavbarLogo href='/'>go</NavbarLogo>
+      <NavbarLogo href='#'>go</NavbarLogo>
 
       <NavbarSwitch>
         <input type='checkbox' onChange={toggleTheme} checked={(dark) ? 'checked' : ''} />
