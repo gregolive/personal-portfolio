@@ -11,10 +11,13 @@ const StyledApp = styled.div`
 `;
 
 const App = () => {
-  const [theme, setTheme] = useState(lightTheme);
+  const [theme, setTheme] = useState((JSON.parse(localStorage.getItem('dark'))) ? darkTheme : lightTheme);
   const [scroll, setScroll] = useState(0);
 
-  const toggleTheme = () => (theme === lightTheme) ? setTheme(darkTheme) : setTheme(lightTheme);
+  const toggleTheme = () => {
+    (theme === lightTheme) ? localStorage.setItem('dark', true) : localStorage.setItem('dark', false);
+    (theme === lightTheme) ? setTheme(darkTheme) : setTheme(lightTheme);
+  };
 
   const handleScroll = () => setScroll(window.scrollY);
 
@@ -26,7 +29,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <StyledApp>
-        <Header toggleTheme={toggleTheme} scroll={scroll} />
+        <Header toggleTheme={toggleTheme} scroll={scroll} dark={(theme === darkTheme)} />
         <Home scroll={scroll} />
         <Footer />
       </StyledApp>

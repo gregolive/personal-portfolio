@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import StyledHeader, { NavbarLogo, NavbarSwitch, Slider, SwitchIcon, NavbarBurger, NavbarMenu, NavbarLink } from './StyledHeader'
 
-const Nav = ({ toggleTheme, scroll }) => {
+const Nav = ({ toggleTheme, scroll, dark }) => {
   const [menu, setMenu] = useState(false);
   const toggleMenu = () => setMenu(!menu);
 
@@ -10,7 +10,7 @@ const Nav = ({ toggleTheme, scroll }) => {
       <NavbarLogo href='/'>go</NavbarLogo>
 
       <NavbarSwitch>
-        <input type='checkbox' onChange={toggleTheme} />
+        <input type='checkbox' onChange={toggleTheme} checked={(dark) ? 'checked' : ''} />
         <Slider />
         <SwitchIcon className='moon'>🌜</SwitchIcon>
         <SwitchIcon className='sun'>🌞</SwitchIcon>
