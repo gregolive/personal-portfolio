@@ -19,6 +19,10 @@ const languages = [
     text: 'Ruby',
     icon: <i className='devicon-ruby-plain colored'></i>,
   },
+  {
+    text: 'Typescript',
+    icon: <i className='devicon-typescript-plain colored'></i>,
+  },
 ];
 
 const frameworks = [
@@ -68,6 +72,10 @@ const tools = [
   {
     text: 'Heroku',
     icon: <i className='devicon-heroku-original colored'></i>,
+  },
+  {
+    text: 'MaterialUI',
+    icon: <i class="devicon-materialui-plain colored"></i>,
   },
   {
     text: 'MongoDB',
