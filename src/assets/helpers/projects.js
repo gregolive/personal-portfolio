@@ -1,5 +1,63 @@
 const personalProjects = [
   {
+    title: 'Petbook',
+    summary: `
+      In development... Facebook for pets!
+      A social media app with beautiful Framer Motion animations, Google and Facebook OAuth authentication, a React Typescript front-end, and more.
+    `,
+    tags: [
+      {
+        text: 'Express',
+        icon: <i className='devicon-express-original'></i>,
+      },
+      {
+        text: 'Framer Motion',
+        icon: <i className='devicon-react-original'></i>,
+      },
+      {
+        text: 'Heroku',
+        icon: <i className='devicon-heroku-original'></i>,
+      },
+      {
+        text: 'Javascript',
+        icon: <i className='devicon-javascript-plain'></i>,
+      },
+      {
+        text: 'MaterialUI',
+        icon: <i class="devicon-materialui-plain colored"></i>,
+      },
+      {
+        text: 'MongoDB',
+        icon: <i className='devicon-mongodb-plain'></i>,
+      },
+      {
+        text: 'Node.js',
+        icon: <i className='devicon-nodejs-plain'></i>,
+      },
+      {
+        text: 'React',
+        icon: <i className='devicon-react-original'></i>,
+      },
+      {
+        text: 'Styled Components',
+        icon: <i className='devicon-react-original'></i>,
+      },
+      {
+        text: 'Typescript',
+        icon: <i className='devicon-typescript-plain'></i>,
+      },
+    ],
+    images: [
+      {
+        src: require('../img/petbook/login.gif'),
+        alt: 'petbook login animation',
+      },
+    ],
+    color: '#069def',
+    repo: 'https://github.com/gregolive/petbook',
+    link: '',
+  },
+  {
     title: 'bitblog',
     summary: `
       A platform for creating and managing a blog, built using the MERN stack.
