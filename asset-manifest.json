@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.642e8f8b.css",
-    "main.js": "/portfolio/static/js/main.e22097ff.js",
-    "static/media/login.gif": "/portfolio/static/media/login.6e7144550d49b976ee5b.gif",
+    "main.js": "/portfolio/static/js/main.f7b01b72.js",
     "static/media/dashboard.jpg": "/portfolio/static/media/dashboard.63595cfe313e442bf268.jpg",
     "static/media/ski-slopes.jpg": "/portfolio/static/media/ski-slopes.0b5317775822f39d9bfb.jpg",
     "static/media/outer-space.jpg": "/portfolio/static/media/outer-space.c1d89059fbdd0aec3c6b.jpg",
@@ -24,10 +23,10 @@
     "static/media/Simplaform.otf": "/portfolio/static/media/Simplaform.cc3c693ae3f7e52df56a.otf",
     "index.html": "/portfolio/index.html",
     "main.642e8f8b.css.map": "/portfolio/static/css/main.642e8f8b.css.map",
-    "main.e22097ff.js.map": "/portfolio/static/js/main.e22097ff.js.map"
+    "main.f7b01b72.js.map": "/portfolio/static/js/main.f7b01b72.js.map"
   },
   "entrypoints": [
     "static/css/main.642e8f8b.css",
-    "static/js/main.e22097ff.js"
+    "static/js/main.f7b01b72.js"
   ]
 }
