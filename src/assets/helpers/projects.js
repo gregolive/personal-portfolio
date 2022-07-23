@@ -1,5 +1,5 @@
 const personalProjects = [
-  {
+  /*{
     title: 'Petbook',
     summary: `
       In development... Facebook for pets!
@@ -56,7 +56,7 @@ const personalProjects = [
     color: '#069def',
     repo: 'https://github.com/gregolive/petbook',
     link: '',
-  },
+  },*/
   {
     title: 'bitblog',
     summary: `

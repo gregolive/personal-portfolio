@@ -86,6 +86,10 @@ const tools = [
     icon: <i className='devicon-npm-original-wordmark colored'></i>,
   },
   {
+    text: 'Tailwind',
+    icon: <i className='devicon-tailwindcss-plain colored'></i>,
+  },
+  {
     text: 'VS Code',
     icon: <i className='devicon-vscode-plain colored'></i>,
   },
